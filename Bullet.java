@@ -2,12 +2,15 @@ import java.awt.*;
 class Bullet {
     int x, y;
     int speed;
+    int dx, dy;
     //boolean active;
     
-    public Bullet(int bx, int by, int bspeed) {
+    public Bullet(int bx, int by, int bspeed, int dx, int dy) {
         x = bx;
         y = by;
         speed = bspeed;
+        this.dx = dx;
+        this.dy = dy;
        // active = true;
     }
 
@@ -22,8 +25,8 @@ class Bullet {
 // }
 
     public void move() {
-            x += Player.dx*speed;
-            y += Player.dy*speed;
+            x += dx*speed;
+            y += dy*speed;
     }
     public void draw(Graphics g){
         g.setColor(Color.RED);

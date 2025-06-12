@@ -5,7 +5,6 @@ import java.awt.*;
 public class Player {
 public Rectangle body;
 
-Bullet bullet = null;
 private ArrayList<Bullet> b;
 public int dx, dy;
 public Player(int startX, int startY, int width, int height) {
@@ -52,9 +51,7 @@ public void direction(int moX, int moY){
 }
 
 public void shoot() {
-    if (bullet == null) {
-        b.add(new Bullet((int) body.getX() + body.width, (int) body.getY() + body.height / 3, 15));
-    }
+    b.add(new Bullet((int) body.getX() + body.width, (int) body.getY() + body.height / 3, 15, dx, dy));
 }
 
 public void bdraw(Graphics g){
