@@ -53,7 +53,11 @@ public void direction(int moX, int moY){
 
 public void shoot() {
     if (bullet == null) {
-        b.add(new Bullet((int) body.getX() + body.width, (int) body.getY() + body.height / 3, 15));
+        b.add(new Bullet((int) body.getX() + body.width,
+                        (int) body.getY() + body.height / 3,
+                        15,
+                        dx,
+                        dy));
     }
 }
 
