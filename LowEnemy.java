@@ -6,6 +6,7 @@ private int speed;
 
 public LowEnemy(int startX, int startY, int width, int height, int speed) {
     body = new Rectangle(startX, startY, width, height);
+    this.speed = speed;
 }
 
 public void move(int[][] map) {
