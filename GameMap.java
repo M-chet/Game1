@@ -1,9 +1,3 @@
-import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.*;
-
-import javax.imageio.*;
-
 public class GameMap {
     public int[][] map;
 
