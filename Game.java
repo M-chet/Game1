@@ -21,6 +21,7 @@ public class Game extends BaseFrame {
     @Override
     public void move() {
         player.move(keys, gameMap.map);
+        player.updatebul();
         ez.move(gameMap.map);
     }
     
